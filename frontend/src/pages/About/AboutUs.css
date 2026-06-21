@@ -1,0 +1,249 @@
+/* =========================
+   ABOUT HERO SECTION
+   ========================= */
+
+.about-hero {
+  height: 55vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Dark overlay */
+.about-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Title */
+.about-title {
+  font-size: 64px;
+  font-weight: 900;
+  color: #f2efe9;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+/* Breadcrumb */
+.about-breadcrumb {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.about-breadcrumb span {
+  color: #cfcfcf;
+}
+
+.about-breadcrumb .active {
+  color: #e63946;
+}
+
+.about-breadcrumb .dot {
+  color: #777;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 42px;
+  }
+}
+
+/* ================= WHAT WE HAVE DONE ================= */
+.about-progress {
+  background: #0b0b0b;
+  padding: 100px 8%;
+  color: #fff;
+}
+
+.about-progress-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* IMAGE */
+.about-progress-image {
+  position: relative;
+}
+
+.about-progress-image img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* PLAY BUTTON */
+/* .play-btn {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  background: #e63946;
+  color: #fff;
+  font-size: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(230, 57, 70, 0.6);
+} */
+
+/* CONTENT */
+.about-progress-content h2 {
+  font-size: 40px;
+  margin: 10px 0 20px;
+}
+
+.about-tag {
+  color: #e63946;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.about-progress-content p {
+  color: #cfcfcf;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* PROGRESS */
+.progress-item {
+  margin-bottom: 22px;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #333;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #e63946;
+  border-radius: 4px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-progress-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* RED DIVIDER ABOVE ABOUT PROGRESS */
+.about-progress {
+  position: relative;
+}
+
+.about-progress::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 90px;
+  height: 4px;
+
+  background: #e63946;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(230, 57, 70, 0.6);
+}
+/* ================= CTA SECTION ================= */
+.cta-section {
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  margin-top: 100px;
+}
+
+.cta-overlay {
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.65);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 0 20px;
+}
+
+.cta-title {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.cta-subtitle {
+  color: #e0e0e0;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+}
+
+/* CTA BUTTON */
+.cta-btn {
+  background: #f4b41a;
+  color: #000;
+  border: none;
+
+  padding: 14px 40px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(244, 180, 26, 0.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 28px;
+  }
+
+  .cta-subtitle {
+    font-size: 14px;
+  }
+}

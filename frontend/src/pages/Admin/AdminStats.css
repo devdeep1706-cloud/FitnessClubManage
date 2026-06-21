@@ -1,0 +1,65 @@
+.admin-stats {
+  width: 100%;
+  padding: 0;
+}
+
+/* GRID LAYOUT */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* CARD STYLE */
+.stat-card {
+  /* Transparent background */
+  background-color: transparent; 
+  
+  /* White outline */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  
+  border-radius: 6px;
+  padding: 25px 20px;
+  
+  /* CENTER ALIGNMENT SETTINGS */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* <--- Forces items to the center horizontally */
+  text-align: center;  /* <--- Ensures text is centered */
+  
+  min-height: 120px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.stat-card:hover {
+  border-color: #ff3355;
+  box-shadow: 0 0 10px rgba(255, 51, 85, 0.2); 
+}
+
+/* TITLE TEXT (e.g. "Total Users") */
+.stat-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+/* VALUE NUMBER (e.g. "128") */
+.stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff3355; /* Neon Red */
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

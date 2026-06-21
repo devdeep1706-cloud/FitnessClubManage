@@ -1,0 +1,93 @@
+.myplans-page {
+  width: 100%;
+}
+
+.section-title {
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 25px;
+  border-left: 4px solid #e63946;
+  padding-left: 14px;
+}
+
+/* Grid */
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* Card */
+.plan-card {
+  background: rgba(15, 15, 15, 0.9);
+  border: 1px solid #222;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.15);
+}
+
+.plan-card h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.price {
+  color: #e63946;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Status badge */
+.status {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.status.active {
+  background: rgba(76, 175, 80, 0.15);
+  color: #4caf50;
+}
+
+.status.inactive {
+  background: rgba(244, 67, 54, 0.15);
+  color: #f44336;
+}
+
+/* Expired look */
+.plan-card.expired {
+  opacity: 0.6;
+}
+
+/* States */
+.loading-text,
+.empty-text {
+  color: #aaa;
+  font-size: 15px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 22px;
+  }
+}

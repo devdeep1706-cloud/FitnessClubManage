@@ -1,0 +1,114 @@
+/* Container to hold both boxes side-by-side */
+.profile-layout {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* --- LEFT: FORM SECTION --- */
+.profile-form-section {
+  flex: 2; 
+}
+
+.input-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #222;
+}
+
+.success-msg {
+  color: #4caf50;
+  background: rgba(76, 175, 80, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* --- RIGHT: PROFILE CARD SECTION --- */
+.profile-card-section {
+  flex: 1; 
+  background: #0f0f0f; 
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+  box-shadow: 0 0 40px rgba(0,0,0,0.6);
+}
+
+/* Avatar Image */
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e63946;
+  margin-bottom: 20px;
+}
+
+/* Upload Button */
+.upload-btn {
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid #444;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+}
+
+.upload-btn:hover {
+  background: #e63946;
+  border-color: #e63946;
+}
+
+/* Text Info */
+.profile-info h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.profile-role {
+  background: rgba(230, 57, 70, 0.2);
+  color: #e63946;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.profile-email {
+  margin-top: 15px;
+  color: #888;
+  font-size: 14px;
+}
+
+/* --- MOBILE RESPONSIVE --- */
+@media (max-width: 850px) {
+  .profile-layout {
+    flex-direction: column-reverse; 
+  }
+  
+  .profile-form-section, 
+  .profile-card-section {
+    width: 100%;
+  }
+}
+
+
+/* Success */
+.success-msg {
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+

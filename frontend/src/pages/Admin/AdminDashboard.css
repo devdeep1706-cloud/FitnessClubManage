@@ -1,0 +1,154 @@
+/* ===============================
+   VARIABLES & GLOBAL
+   =============================== */
+:root {
+  --neon-red: #ff3355;      /* The active color from the image */
+  --neon-orange: #ff9f43;   /* For the GYM logo accent if needed */
+  --bg-dark: #121212;       /* Deep dark background */
+  --bg-card: #1c1c1c;       /* Slightly lighter for cards */
+  --text-white: #ffffff;
+  --text-muted: #aaaaaa;
+  --border-style: 1px solid rgba(255, 255, 255, 0.25); /* The thin white outline */
+}
+
+/* ROOT LAYOUT */
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  padding-top: 70px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean font */
+}
+
+/* ===============================
+   SIDEBAR
+   =============================== */
+.admin-sidebar {
+  width: 250px;
+  /* Removed the solid background to match the 'floating' look in the image */
+  background-color: transparent; 
+  border-right: var(--border-style);
+  padding: 30px 20px;
+  position: sticky;
+  top: 70px;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Spacing between buttons */
+}
+
+/* SIDEBAR BUTTONS */
+.admin-sidebar button {
+  width: 100%;
+  background: transparent;
+  /* Distinct white outline as seen in the image */
+  border: var(--border-style); 
+  color: var(--text-white);
+  padding: 12px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px; /* Sharp corners like the image */
+  cursor: pointer;
+  text-align: center; /* Image shows centered text in buttons */
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.admin-sidebar button:hover {
+  border-color: var(--text-white);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ACTIVE STATE - The Red Block */
+.admin-sidebar button.active {
+  background-color: var(--neon-red);
+  border-color: var(--neon-red);
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 51, 85, 0.4); /* Subtle glow */
+}
+
+/* ===============================
+   MAIN CONTENT
+   =============================== */
+.admin-main {
+  flex: 1;
+  padding: 40px;
+  overflow-x: hidden;
+}
+
+/* ===============================
+   STATS / CARDS
+   =============================== */
+.admin-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 10px;
+}
+
+/* STAT CARD styling */
+.admin-card {
+  background-color: transparent; /* Transparent background */
+  border: var(--border-style);   /* The white outline */
+  padding: 40px 20px;            /* Taller padding as seen in image */
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px;             /* Make them tall/square */
+}
+
+/* Label (e.g., "Total Users") */
+.admin-card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--text-white);
+  font-weight: 600;
+  text-transform: uppercase;     /* Optional: matches typical dashboard headers */
+  letter-spacing: 0.5px;
+}
+
+/* Number (e.g., "128") */
+.admin-card span {
+  font-size: 36px;               /* Larger number */
+  font-weight: 700;
+  color: var(--neon-red);        /* The neon pink/red color */
+}
+
+/* ===============================
+   TABLES
+   =============================== */
+.admin-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 30px;
+  border: var(--border-style);
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.admin-table th {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--neon-red); /* Headers in red to match theme */
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.admin-table td {
+  background-color: transparent;
+  color: var(--text-white);
+}
+
+.admin-table tr:last-child td {
+  border-bottom: none;
+}

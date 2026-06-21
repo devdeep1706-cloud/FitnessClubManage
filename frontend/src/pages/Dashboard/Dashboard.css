@@ -1,0 +1,112 @@
+/* ===== MAIN LAYOUT ===== */
+.user-dashboard {
+  display: flex;
+  min-height: calc(100vh - 80px); /* navbar height */
+  margin-top: 80px;
+  background: radial-gradient(circle at top, #111 0%, #000 70%);
+  color: #fff;
+}
+
+/* ===== SIDEBAR ===== */
+.user-sidebar {
+  width: 240px;
+  background: #0b0b0b;
+  border-right: 1px solid #222;
+  padding: 30px 20px;
+}
+
+.user-sidebar h3 {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #fff;
+  border-left: 4px solid #e63946;
+  padding-left: 10px;
+}
+
+.user-sidebar button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: transparent;
+  border: 1px solid #222;
+  color: #ccc;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.user-sidebar button:hover {
+  background: #151515;
+  color: #fff;
+}
+
+.user-sidebar button.active {
+  background: #e63946;
+  color: #fff;
+  border-color: #e63946;
+}
+
+/* ===== MAIN CONTENT ===== */
+.user-content {
+  flex: 1;
+  padding:30px 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* ===== CARD ===== */
+.dashboard-card {
+  width: 100%;
+  max-width: 700px;
+  background: #0f0f0f;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.6);
+}
+
+/* ===== HEADINGS ===== */
+.dashboard-card h2 {
+  margin-bottom: 25px;
+  font-size: 22px;
+  border-bottom: 1px solid #222;
+  padding-bottom: 10px;
+}
+
+/* ===== FORM ===== */
+.dashboard-card label {
+  display: block;
+  margin-bottom: 6px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.dashboard-card input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  background: #111;
+  border: 1px solid #222;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.dashboard-card input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.dashboard-card button {
+  background: #e63946;
+  border: none;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dashboard-card button:hover {
+  background: #ff4d5a;
+}

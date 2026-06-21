@@ -1,0 +1,133 @@
+/* Page Container */
+.feedback-page {
+  width: 100%;
+  padding: 20px;
+  color: white;
+  min-height: 80vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Matching Section Title Style */
+.section-title {
+  border-left: 4px solid #e63946;
+  padding-left: 15px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: white;
+}
+
+/* Centering the Form */
+.feedback-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+/* Card Style - Matches My Plans & Schedule Cards */
+.feedback-card {
+  background-color: #1e1e1e;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.feedback-card label {
+  display: block;
+  margin-bottom: 10px;
+  color: #e63946; /* Accent color for labels */
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Star Rating */
+.rating-stars {
+  font-size: 40px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.star {
+  color: #444; /* Dark grey when inactive */
+  margin-right: 10px;
+  transition: color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover or Active State */
+.star.active {
+  color: #ffc107; /* Gold color for stars */
+  transform: scale(1.1); /* Slight pop effect */
+}
+
+.rating-text {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  height: 20px; /* Prevents layout jump */
+}
+
+/* Text Area */
+.feedback-card textarea {
+  width: 100%;
+  min-height: 150px;
+  background: #111;
+  color: #fff;
+  border: 1px solid #333;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.feedback-card textarea:focus {
+  outline: none;
+  border-color: #e63946; /* Red border on focus */
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  text-transform: uppercase;
+}
+
+.submit-btn:hover {
+  background-color: #d62828; /* Darker red on hover */
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+.submit-btn:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .feedback-card {
+    padding: 25px;
+  }
+  
+  .rating-stars {
+    font-size: 32px;
+  }
+}

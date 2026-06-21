@@ -1,0 +1,283 @@
+.services-section {
+  background: #0b0b0b;
+  padding: 100px 60px;
+  color: #ffffff;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.services-subtitle {
+  color: #e63946;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.services-title {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+/* GRID */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* SERVICE CARD */
+.service-box {
+  position: relative;
+  overflow: hidden;
+  height: 320px;
+}
+
+.service-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-content {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-content h3 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.service-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.explore {
+  margin-top: 15px;
+  color: #e63946;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* .service-box.highlight .service-content {
+  background: rgba(230, 57, 70, 0.85);
+} */
+
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========= SERVICES VIDEO SECTION ========= */
+
+.services-video {
+  position: relative;
+  height: 520px;
+  background: url("/assets/banner-bg.jpg") center/cover no-repeat;
+  margin-top: 100px;
+}
+
+.services-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: #ffffff;
+}
+
+.services-video-title {
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.services-video-subtitle {
+  font-size: 14px;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  margin-bottom: 35px;
+}
+
+/* PLAY BUTTON */
+.services-play-btn {
+  width: 70px;
+  height: 70px;
+  background: #f4a261;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 26px;
+  color: #ffffff;
+  text-decoration: none;
+
+  box-shadow: 0 0 25px rgba(244, 162, 97, 0.7);
+  transition: all 0.3s ease;
+}
+
+.services-play-btn:hover {
+  transform: scale(1.12);
+  box-shadow: 0 0 40px rgba(244, 162, 97, 1);
+}
+/* ========= VIDEO MODAL ========= */
+
+.video-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.video-close {
+  position: absolute;
+  top: -45px;
+  right: 0;
+
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 28px;
+  cursor: pointer;
+}
+/* ================= PLANS SECTION ================= */
+
+.plans {
+  background: #0b0b0b;
+  padding: 120px 40px;
+  text-align: center;
+  color: #ffffff;
+  
+}
+
+.plans-subtitle {
+  color: #e63946;
+  font-size: 14px;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.plans-title {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 80px;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.plan-card {
+  border: 1px solid #2a2a2a;
+  padding: 55px 35px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+  border-color: #e63946;
+}
+
+
+
+.plan-name {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.plan-price {
+  font-size: 48px;
+  font-weight: 900;
+  color: #e63946;
+  margin-bottom: 5px;
+}
+
+.plan-type {
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+  display: block;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.plan-card ul li {
+  font-size: 14px;
+  line-height: 2.1;
+  opacity: 0.9;
+}
+
+.plan-btn {
+  padding: 14px 38px;
+  background: #2a2a2a;
+  color: #ffffff;
+  border: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.plan-btn:hover {
+  background: #e63946;
+}
+
+
+
+@media (max-width: 900px) {
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.plans .plan-card{
+    opacity: 1 !important;
+    transform: none !important;
+}

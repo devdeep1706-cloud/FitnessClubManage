@@ -1,0 +1,97 @@
+
+
+.admin-trainers {
+  padding: 20px;
+  color: white;
+  width: 100%;
+}
+
+.trainer-form-card {
+  background: #1e1e1e;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  max-width: 500px;
+  border: 1px solid #333;
+}
+
+.trainer-form-card h3 {
+  margin-bottom: 20px;
+  color: #e63946;
+}
+
+.trainer-form-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #111;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 4px;
+}
+
+/* Gray out the read-only input */
+.readonly-input {
+  background-color: #2a2a2a !important;
+  color: #777 !important;
+  cursor: not-allowed;
+}
+
+.file-upload-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.uploading-text {
+  color: #f1c40f;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.trainer-form-card button {
+  background: #e63946;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.trainers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.trainer-card-admin {
+  background: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.trainer-card-admin img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.trainer-card-admin .info {
+  padding: 15px;
+}
+
+.trainer-card-admin button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}

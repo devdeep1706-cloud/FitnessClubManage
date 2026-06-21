@@ -1,0 +1,120 @@
+/* Container */
+.admin-users {
+  background: #020617; /* Dark background */
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-users h2 {
+  margin-bottom: 25px;
+  border-bottom: 2px solid #1e293b;
+  padding-bottom: 10px;
+  color: #f8fafc;
+}
+
+.empty {
+  color: #94a3b8;
+  font-style: italic;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 15px;
+  border-bottom: 1px solid #1e293b;
+  text-align: left;
+}
+
+th {
+  color: #22d3ee; /* Cyan highlight for headers */
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+td {
+  color: #cbd5e1;
+}
+
+tr:hover {
+  background-color: rgba(30, 41, 59, 0.5); /* Slight hover effect */
+}
+
+/* Role Badge */
+.admin {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.user {
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid rgba(34, 197, 94, 0.4);
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s;
+  margin-right: 10px;
+}
+
+/* Role Toggle Button (Blue) */
+.role-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.role-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+/* Delete Button (Red) */
+.delete-btn {
+  background-color: rgba(239, 68, 68, 0.15); /* Ghost style red */
+  color: #ef4444;
+  border: 1px solid #ef4444;
+}
+
+.delete-btn:hover {
+  background-color: #ef4444;
+  color: white;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  th, td {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .role-btn, .delete-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}

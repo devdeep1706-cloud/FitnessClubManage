@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: black;
+  color: white;
+  font-family: poppins;
+}
+
+.layout-container {
+  max-width: 1200px; 
+  margin: 0 auto;   
+  width: 100%;
+  padding: 0 20px;  
+}
+/* ==================================
+   GLOBAL MOBILE RESPONSIVENESS
+   ================================== */
+
+@media (max-width: 768px) {
+  /* 1. Force Grids to Single Column */
+  .features-grid,
+  .plans-grid,
+  .team-grid,
+  .gallery-grid,
+  .services-grid,
+  .about-progress-container, 
+  .footer-container {
+    grid-template-columns: 1fr !important; 
+    gap: 30px;
+  }
+
+  /* 2. Adjust Typography */
+  .hero-title {
+    font-size: 42px !important; /* Smaller hero text */
+    line-height: 1.2;
+  }
+  
+  .section-title, .plans-title, .features-title {
+    font-size: 28px !important;
+  }
+
+  /* 3. Adjust Padding */
+  .hero, .features, .plans, .about-hero, .footer, .gallery-page, .admin-layout {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
+  /* 4. Dashboard Sidebar Stack */
+  .user-dashboard, .admin-layout {
+    flex-direction: column;
+  }
+  
+  .user-sidebar, .admin-sidebar {
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+    border-right: none;
+    border-bottom: 1px solid #333;
+    display: flex;
+    overflow-x: auto; 
+    padding: 15px;
+  }
+
+  .user-sidebar button, .admin-sidebar button {
+    flex: 0 0 auto; /* Don't shrink buttons */
+    margin-right: 10px;
+    margin-bottom: 0;
+    width: auto;
+  }
+
+  /* 5. Hide large images in 'About' if needed or let them stack */
+  .about-progress-image img {
+    height: auto;
+  }
+}
